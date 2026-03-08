@@ -10,7 +10,8 @@ RUN apt-get update && \
     libffi-dev libssl-dev \
     udev screen minicom iputils-ping \
     libusb-1.0-0-dev \
-    git clangd socat gdb-multiarch curl && \
+    git clangd socat gdb-multiarch curl \
+    htop ncdu jq && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
